@@ -1,7 +1,7 @@
 
-shirasagiを直下にcloneする
+## shirasagiを直下にcloneする
 
-shirasagiのDB設定を変える
+## shirasagiのDB設定を変える
 
 ```
 --- a/config/samples/mongoid.yml
@@ -13,3 +13,16 @@ shirasagiのDB設定を変える
 -        - localhost:27017
 +        - mongodb:27017
 ```
+
+## docker-composeでビルドして起動
+```
+docker-compose up --build
+```
+
+## サンプルデータを入れる（ローカルで実行する）
+```
+sh etc/init.sh
+```
+
+## ブラウザで確認する
+http://localhost:3000
