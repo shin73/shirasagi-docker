@@ -12,7 +12,16 @@
        hosts:
 -        - localhost:27017
 +        - mongodb:27017
+
+@@ -7,7 +7,7 @@ development:
+     default:
+       database: ss
+       hosts:
+-        - localhost:27017
++        - mongodb:27017
+
 ```
+
 
 ## docker-composeでビルドして起動
 ```
